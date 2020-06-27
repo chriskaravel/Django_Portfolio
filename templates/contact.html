@@ -1,0 +1,54 @@
+{% extends 'base.html'%}
+
+{% block content %}
+<!-- Form DIV -->
+<div class='container pt-5 min-vh-100 bg-light'>
+  <div class="col-xl-12"></div>
+  <div class="container contact-form pt-3 ">
+    <form method="post">
+      {% csrf_token %}
+        <h3>Do you have any questions? Please do not hesitate to contact me directly. I will come back to you ASAP.</h3>
+        <div class="row">
+            <div class="col-md-6 col-lg-6 ">
+              <div class="form-group">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject *" value=""  />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="from_email" class="form-control" placeholder="Your Email *" value=""  />
+              </div>
+              <div class="form-group">
+                  <input type="text" name="txtPhone" class="form-control" placeholder="Your Phone Number *" value="" />
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-6 ">
+              <div class="form-group">
+                  <textarea name="message" class="form-control" placeholder="Your Message *" style="width: 100%; height: 150px;" ></textarea>
+              </div>
+            </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" name="btnSubmit" class="btnContact" value="Send Message" />
+        </div>
+    </form>
+  </div>
+<!-- Map Div -->
+  <div class="row pt-3 pb-1 ">
+    <div class="col-2"></div>
+    <div class="col-8">
+      <div id='map' width="100%" style='height:300px' ></div>
+      <script>
+      mapboxgl.accessToken = '{{mapbox_access_token}}';
+      var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [-0.4017, 51.5795],
+      zoom: 11
+      });
+      </script>
+    </div>
+    <div class="col-2 "></div>
+  </div>
+</div>
+
+{% endblock %}
+

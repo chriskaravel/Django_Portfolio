@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- All about div -->
+<div class="container pt-5 min-vh-100 bg-light">
+  <div name="row_projects" class="row no-gutters pt-3  text-black">
+    <div name="col_projects_info " class=" col-12 text-center ">
+        <h4>Now this is a story all about how
+          my life got flipped,turned,upside,down
+          and I'd like to take a minute, just sit right there...</h4>
+    </div>
+  </div>
+ 
+  <!-- Info div -->
+  <div name="row_my_story" class="row no-gutters  pt-2 bg-light text-dark" >
+    <div name="col_my_story_info" class="col-8 text-left pl-2">
+      <div class="ml-2">
+        <p>I was born in a little island in Greece called Corfu.From my early years i found a love in video games and computers,
+          i was always doing something from playing a video game to fixing or
+          experimenting on computer hardwares or trying to "hack" things in my computer.
+          That lead me to study Computer Science.</p>
+      </div>
+    </div>
+    <div name="col_projects2" class="col-4 pl-3 py-2" >
+      {% load static %}<img width="95%" height="100%"  src="{% static "/img/cfu.jpg" %}">
+    </div>
+    <div name="col_projects2" class="col-4 pl-3 py-2" >
+      {% load static %}<img width="95%" height="100%"   src="{% static "/img/life.jpg" %}">
+    </div>
+    <div name="col_my_story_info" class="col-8 text-right pt-1 pr-2 pl-3">
+      <div class="mr-2">
+        <p >I used to play football but then i "took an arrow in the knee"-torn my acl so i stopped playing
+          but dont worry i have other hobbies.I like water sports,travelling  with friends when i have the time and money :),
+          watching tv series,eating a lot,going out for drinks and going to the gym now that i cant play football.</p>
+      </div>
+    </div>
+    <div name="col_my_story_info" class="col-8 text-left py-2  pl-2">
+      <div class="ml-2">
+        <p>Fun fact,i was enlisted to the Greek Army.Greece currently has universal compulsory military service for males
+          from and over 18 years of age. Under Greek law, all men over 18 years of age must serve in the Armed Forces for a period of 9 months.</p>
+      </div>
+    </div>
+    <div name="col_projects2" class="col-4  py-3 pl-3" >
+      {% load static %}<img width="95%" height="100%"   src="{% static "/img/Armies.jpg" %}">
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+          

@@ -1,0 +1,150 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<!-- welcome div -->
+<div class="container pt-5 min-vh-100">
+    <div class="row " name="Welcome">
+        <div class="col-12 ">        
+            <div name="icons" class="row no-gutters pt-2 bg-light text-black" style="height:300px;" >
+                <div name="col_hello" class="col-12 pl-2 ">
+                    <p><h2>Hello i'm Christos Karavelas.</h2></p>
+                    <p><h3>I like to develop websites.</h3></p>
+                </div>
+                <div name="col_left_img" class="col-4 pl-5 ">
+                    {% load static %}<img width="30" height="30" src="{% static "img/desktop.png" %} ">
+                    Web Design
+                </div>
+                <div name="col_center_img" class="col-4 pl-5">
+                </div>
+                <div name="col_right_img" class="col-4 pl-5">
+                    {% load static %}<img width="30" height="30" src="{% static "img/mobile2.png" %} ">
+                    Mobile Design
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- div that contains the skills -->
+    <div class="row">
+        <div class="col-12" name="MySkills">        
+            <div name="row_skills" class="row no-gutters pt-2 bg-dark text-white" >
+                <!-- <div name="row_skills" class="row no-gutters pt-2 bg-dark text-white" style="height:300px;"> -->
+                <div name="col_skills" class="col-12 ">
+                    <h2 class="text-center" >My skills</h2>
+                    <p class="text-center"><i> I'm a graduate computer science engineer,with experience in Web Development(Python/Django,Bootstrap4) and currently expanding my knowledge it Data Science.</i></p>
+                </div>
+                <div class="col-1"></div>
+                <!-- 1st div -->
+                <div name="col_left" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center ">
+                    <h5>Technical Skills</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">Web Development</li>
+                        <li class="nav-item">Mobile Development</li>
+                        <li class="nav-item">Machine Learning</li>
+                    </ul>
+                </div>
+                <!-- 2nd div -->
+                <div name="col_middle1" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2  text-center ">
+                    <h5>Languages</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">Python</li>
+                        <li class="nav-item">Java</li>
+                    </ul>
+                </div>
+                <!-- 3rd div -->
+                <div name="col_middle2" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2  text-center ">
+                    <h5>Web Technologies</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"> Django</li>
+                        <li class="nav-item">Bootstrap4</li>
+                        <li class="nav-item">Html5</li>
+                        <li class="nav-item">Css</li>
+                    </ul>
+                </div>
+                <!-- 4th div -->
+                <div name="col_middle3" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2  text-center ">
+                    <h5>Databases</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"> SQLite</li>
+                        <li class="nav-item"> MySQL</li>
+                    </ul>
+                </div>
+                <!-- 5th div -->
+                <div name="col_right" class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center ">
+                    <h5>Tools</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item"> Anaconda</li>
+                        <li class="nav-item"> Tensorflow</li>
+                        <li class="nav-item"> Sklearn</li>
+                        <li class="nav-item"> Pandas</li>
+                        <li class="nav-item"> Numpy</li>
+                    </ul>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects div -->
+    <div name="projects" class="row no-gutters pt-2 bg-light text-black">
+        <div name="col_projects_info " class=" col-12 text-center ">
+          <h2>Check out my latest projects</h2>
+          <p><i>These are some of the projects i have accomplished through my journey as a web developer from my early years in university till now.</i></p>
+        </div>
+        <div name="row_projects" class="row ">
+            <div class="col-1"></div>
+          <div name="left_project" class="col-5 " >
+            <a  href="portfolio">
+              {% load static %}<img width="100%"  src="{% static "/img/proj1.png" %}">
+            </a>
+          </div>
+          <div name="right_project" class="col-5 " >
+            <a  href="portfolio">
+              {% load static %}<img width="100%"   src="{% static "/img/proj2.png" %}">
+            </a>
+            <div class="col-1"> </div>
+          </div>
+        </div>
+    </div>
+<!-- Resume div -->
+    <div name="row_my_story" class="row no-gutters  bg-light text-dark" >
+        <div name="col_my_story_info" class="col-12 text-center px-2">
+            <h2>Here is a little of my story</h2>
+            <p><i>I was born and raised in Greece to a Greek Father and an Irish
+            Mother.After serving my country and trying to find out what i want in life,i found an interest in programming.
+            I graduated at july 2019 from university of Ioannina. I moved in London at the weird year of 2020 where I currently reside now and looking for my next big challenge.</i></p>
+        </div>
+        <div name="col_my_story_info" class="col-12 text-left pl-2">
+            <h2>January 2020 - present</h2>
+            <p><h5>Barista - Costa Coffee</h5></p>
+            <p>Interact with customers, take orders and serve drinks.</p>
+            <p>Maintaining the upkeep and tidyness of the area.</p>
+            <p>Responsibility for takings and balancing of till.</p>
+        </div>
+        <div name="col_my_story_info" class="col-12 text-right px-2">
+            <h2>July 2019</h2>
+            <p><h5>Graduation - University of Ioannina</h5></p>
+            <p >School of Computer Science and Telecommunications.</p>
+            <p>Degree equivalent to Bsc.</p>
+            <p>Thesis - Android App for Users Communication.</p>
+        </div>
+        <div name="col_my_story_info" class="col-12 text-left px-2">
+            <h2>April 2018 – Septeber 2018</h2>
+            <p><h5 >Junior Web Developer - Creative Web Applications</h5></p>
+            <p>Worked as part of a multi-disciplinary team.</p>
+            <p>Participated in discussions with clients to clarify what they require.</p>
+            <p>Perfomed maintenance and updates to existing client Web sites.</p>
+            <p>Participated in brainstroming sessions to come up with ideas.</p>
+        </div>
+        <div class="col-6"></div>
+        <div name="col_my_story_info" class="col-sm-12 col-lg-6 text-right px-2">
+            <h2>September 2016 – April 2018</h2>
+            <p><h5>Owner - Max Speed</h5></p>
+            <p>Developed the website for my businnes for people to get information about the vehicles I was renting and aquire
+            to rent them through email forms.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
+
